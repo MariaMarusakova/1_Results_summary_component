@@ -70,6 +70,9 @@ Use transparency to get the colour variations necessary to match the design. Hin
 
 * {
     font-family: 'Hanken Grotesk', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
 }
 
 body {
@@ -77,6 +80,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    background-color: var(--Pale-blue);
 
 }
 
@@ -102,14 +107,14 @@ h1 {
 
 .circle {
     background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
     display: inline-block;
 }
 
 .your-final {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 0 0 0 0;
     margin: 20% 0 0 0;
     font-weight: 700;
@@ -117,28 +122,140 @@ h1 {
 }
 
 .maximal-score {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0 0 0 0;
     margin: 0% 0 0 0;
     color: var(--Light-lavender);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 h2 {
-    margin: 1rem 0 0 0;
+    margin: 0.9rem 0 0.8rem 0;
+    font-size: 1.4rem;
 }
 
 p.final-text {
-    font-size: 12px;
-    padding: 0 2rem;
+
+    font-size: 11px;
     color: var(--Light-lavender);
-    font-weight: 700;
-    vertical-align: middle;
-    align-content: justify;
-    display: inline-block;
+    font-weight: 500;
+    align-content: justify;  
+    vertical-align: middle;  
+    padding: 0 1rem 1rem;
+   
 }
 
 .detailed-results {
     float: right;
-    padding-left: 120px;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    width: 250px;
+    border-radius: 25px;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.2), hsla(0, 0%, 100%, 0.9));;
+
 }
+
+h3.summary {
+    padding-bottom: 15px;
+    color:hsl(224, 30%, 27%, 0.9);
+
+}
+
+.all-skills{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 10px;
+
+}
+
+.skill {
+    display: flex;
+    padding: 0.7rem 0.7rem;
+    font-size: 10x;
+    align-items: center;
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+
+img {
+    height: 14px;
+}
+
+.withicon {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+div.reaction > div > p:first-of-type {
+    color: hsla(0, 100%, 67%, 0.6);
+
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.15);
+}
+
+div.memory > div > p:first-of-type {
+    color: hsla(39, 100%, 56%, 0.6);
+
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+div.verbal > div > p:first-of-type {
+    color: hsla(166, 100%, 37%, 0.9);
+
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    margin-bottom: 1rem;
+}
+
+div.visual > div > p:first-of-type {
+    color: hsla(234, 85%, 45%, 0.9);
+
+}
+
+div.skill > p {
+    display: flex;
+    gap: 0.3rem;
+    font-size: 13px;
+    color:hsl(224, 30%, 27%, 0.5);
+    font-weight: 800;
+}
+
+div.skill > p > b {
+    color:hsl(224, 30%, 27%, 0.9);
+}
+
+button {
+    align-content: justify;  
+    align-items: center;
+    border-radius: 1.5rem;
+    margin-top: auto;
+    padding: 0.5rem;
+    background-color: var(--Dark-gray-blue);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+
+
